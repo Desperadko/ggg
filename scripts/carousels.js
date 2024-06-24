@@ -4,9 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         document.querySelectorAll('.home-page_subsection1').forEach(subsection => {
             const track = subsection.querySelector('.cards_list');
-            console.log(track.children);
             const cards = Array.from(track.children);
-            console.log(cards);
             cards[0].classList.add('current_slide');
             const leftButton = subsection.querySelector('.button_left');
             const rightButton = subsection.querySelector('.button_right');
@@ -27,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 slideCard(track, currentSlide, nextSlide, leftButton, rightButton);
             });
         
-            const mq1 = window.matchMedia('(width >= 1185px)');
+            const mq1 = window.matchMedia('(width > 1185px)');
             mq1.addEventListener('change', () => resetTrackPos(track, cards, leftButton, rightButton));
         });
         

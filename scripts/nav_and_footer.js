@@ -13,7 +13,6 @@ class HeaderNav extends HTMLElement{
                         <div class="nav_options_container">
                             <ul class="nav_options">
                                 <li class="nav_option"><a href="../html_structures/home-page.html">Home</a></li>
-                                <li class="nav_option"><a href="#">News</a></li>
                                 <li class="nav_option">
                                     <a href="selection-page.html?selection=genres">Genres</a>
                                     <i class="genres_sublist_arrow gg-chevron-down"></i>
@@ -90,11 +89,11 @@ class FooterNav extends HTMLElement{
                         <li>
                             <h3>About</h3>
                         </li>
-                        <li><a href="">About Company</a></li>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">Terms and Conditions</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Cookies</a></li>
+                        <li><a href="#">About Company</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookies</a></li>
                     </ul>
                     <ul class="community_list footer_list">
                         <li>

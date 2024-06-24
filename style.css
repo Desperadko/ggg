@@ -413,8 +413,8 @@ body{
                     }
 
                     .cards_container{
-                        position: relative;
                         display: block;
+                        position: relative;
                         overflow: hidden;
                         height: 100%;
                         width: min(400px, 100%);
@@ -620,10 +620,23 @@ body{
             display: grid;
             gap: 40px;
 
+            .selection_section{
+                overflow: hidden;
+                transition: height 0.5s ease-out;
+            }
+
             h2{
                 font-family: "Yatra One", system-ui;
+                width: max-content;
+
                 a{
                     color: var(--black-color);
+                    transition: color 0.2s;
+                }
+                &:hover{
+                    a{
+                        color:var(--a_bit-darker-green-color)
+                    }
                 }
             }
         }
