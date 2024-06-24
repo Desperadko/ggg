@@ -1,0 +1,206 @@
+{
+    "trending": [
+        {
+            "title": "Lost Ark",
+            "desc": "The Korean Diablo no one knew they wanted",
+            "author": "Rado Radev",
+            "image": "../assets/lost_ark_1200.jpeg",
+            "review_id": "lost_ark_review"
+        },
+        {
+            "title": "Elden Ring",
+            "desc": "A Masterpiece in Open-World Design",
+            "author": "Rado Radev",
+            "image": "../assets/elden_ring_1200.jpeg",
+            "review_id": "elden_ring_review"
+        },
+        {
+            "title": "Age of Empires 2:<br>Definitive Edition",
+            "desc": "A historic classic",
+            "author": "Rado Radev",
+            "image": "../assets/aoe2de_1200.jpeg",
+            "review_id": "aoe_2_de_review"
+        },
+        {
+            "title": "Dead By Daylight",
+            "desc": "In the killer's shoes",
+            "author": "Rado Radev",
+            "image": "../assets/dead_by_daylight_1200.jpeg",
+            "review_id": "dead_by_daylight_review"
+        },
+        {
+            "title": "God of War: Ragnarok",
+            "desc": "A Sequel Worthy of the Gods",
+            "author": "Rado Radev",
+            "image": "../assets/god_of_war_1200.jpeg",
+            "review_id": "god_of_war_review"
+        },
+        {
+            "title": "Resident Evil Village",
+            "desc": "Horror at its Finest",
+            "author": "Rado Radev",
+            "image": "../assets/resident_evil_1200.jpeg",
+            "review_id": "resident_evil_review"
+        },
+        {
+            "title": "Final Fantasy XIV: Endwalker",
+            "desc": "The Ultimate Expansion",
+            "author": "Rado Radev",
+            "image": "../assets/final_fantasy_xiv_1200.jpeg",
+            "review_id": "final_fantasy_review"
+        }
+    ],
+    "latest": [
+        {
+            "title": "Hogwarts Legacy",
+            "desc": "Magic Unleashed",
+            "author": "Rado Radev",
+            "image": "../assets/hogwarts_legacy_1200.jpeg",
+            "review_id": "hogwarts_legacy_review"
+        },
+        {
+            "title": "Dead By Daylight",
+            "desc": "In the killer's shoes",
+            "author": "Rado Radev",
+            "image": "../assets/dead_by_daylight_1200.jpeg",
+            "review_id": "dead_by_daylight_review"
+        },
+        {
+            "title": "God of War: Ragnarok",
+            "desc": "A Sequel Worthy of the Gods",
+            "author": "Rado Radev",
+            "image": "../assets/god_of_war_1200.jpeg",
+            "review_id": "god_of_war_review"
+        },
+        {
+            "title": "Cyberpunk 2077",
+            "desc": "Redemption Through Patches",
+            "author": "Rado Radev",
+            "image": "../assets/cyberpunk_2077_1200.jpeg",
+            "review_id": "cyberpunk_2077_review"
+        },
+        {
+            "title": "The Witcher 3: Wild Hunt",
+            "desc": "Next-Gen Upgrade",
+            "author": "Rado Radev",
+            "image": "../assets/the_witcher_3_1200.jpeg",
+            "review_id": "the_witcher_review"
+        },
+        {
+            "title": "Assassin's Creed Valhalla",
+            "desc": "Dawn of Ragnarok",
+            "author": "Rado Radev",
+            "image": "../assets/assassins_creed_1200.jpeg",
+            "review_id": "assassins_creed_review"
+        },
+        {
+            "title": "Elden Ring",
+            "desc": "A Masterpiece in Open-World Design",
+            "author": "Rado Radev",
+            "image": "../assets/elden_ring_1200.jpeg",
+            "review_id": "elden_ring_review"
+        }
+    ],
+    "new_releases": [
+        {
+            "title": "Starfield",
+            "desc": "Embark on an interstellar adventure",
+            "author": "Rado Radev",
+            "image": "../assets/starfield_1200.jpeg",
+            "review_id": "starfield_review"
+        },
+        {
+            "title": "Hogwarts Legacy",
+            "desc": "Explore the magical world in story-driven action RPG",
+            "author": "Rado Radev",
+            "image": "../assets/hogwarts_legacy_1200.jpeg",
+            "review_id": "hogwarts_legacy_review"
+        },
+        {
+            "title": "Forspoken",
+            "desc": "A new fantasy adventure from the creators of Final Fantasy XV",
+            "author": "Rado Radev",
+            "image": "../assets/forspoken_1200.jpeg",
+            "review_id": "forspoken_review"
+        },
+        {
+            "title": "Saints Row V",
+            "desc": "Back in a reboot that promises wild action and humor",
+            "author": "Rado Radev",
+            "image": "../assets/saints_row_1200.jpeg",
+            "review_id": "saints_row_review"
+        },
+        {
+            "title": "Dying Light 2 Stay Human",
+            "desc": "A post-apocalyptic world filled with zombies and danger",
+            "author": "Rado Radev",
+            "image": "../assets/dying_light_1200.jpeg",
+            "review_id": "dying_light_review"
+        },
+        {
+            "title": "Sifu",
+            "desc": "Master kung fu and take on your enemies",
+            "author": "Rado Radev",
+            "image": "../assets/sifu_1200.jpeg",
+            "review_id": "sifu_review"
+        },
+        {
+            "title": "Gran Turismo 7",
+            "desc": "Get behind the wheel in the latest installment of this iconic racing series",
+            "author": "Rado Radev",
+            "image": "../assets/gran_turismo_1200.jpeg",
+            "review_id": "gran_turismo_review"
+          }
+    ],
+    "upcoming": [
+        {
+            "title": "The Legend of Zelda:<br>Tears of the Kingdom",
+            "desc": "The highly anticipated sequel to one of the greatest games of all time",
+            "author": "Rado Radev",
+            "image": "../assets/legend_of_zelda_1200.jpeg",
+            "review_id": "the_legend_of_zelda_review"
+        },
+        {
+            "title": "Starfield",
+            "desc": "Bethesda's new space RPG promises a vast universe to explore",
+            "author": "Rado Radev",
+            "image": "../assets/starfield_1200.jpeg",
+            "review_id": "starfield_review"
+        },
+        {
+            "title": "Cyberpunk 2077",
+            "desc": "Redemption Through Patches",
+            "author": "Rado Radev",
+            "image": "../assets/cyberpunk_2077_1200.jpeg",
+            "review_id": "cyberpunk_2077_review"
+        },
+        {
+            "title": "Avowed",
+            "desc": "Obsidian Entertainment's new first-person RPG set in the world of Eora",
+            "author": "Rado Radev",
+            "image": "../assets/avowed_1200.jpeg",
+            "review_id": "avowed_review"
+        },
+        {
+            "title": "Final Fantasy XVI",
+            "desc": "The next major entry in the Final Fantasy series is coming soon",
+            "author": "Rado Radev",
+            "image": "../assets/final_fantasy_xiv_1200.jpeg",
+            "review_id": "final_fantasy_review"
+        },
+        {
+            "title": "Hogwarts Legacy",
+            "desc": "Live the unwritten tale in the magical world of Harry Potter",
+            "author": "Rado Radev",
+            "image": "../assets/hogwarts_legacy_1200.jpeg",
+            "review_id": "hogwarts_legacy_review"
+        },
+        {
+            "title": "Elden Ring",
+            "desc": "A Masterpiece in Open-World Design",
+            "author": "Rado Radev",
+            "image": "../assets/elden_ring_1200.jpeg",
+            "review_id": "elden_ring_review"
+        }
+    ]
+}

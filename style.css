@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/close.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/chevron-up.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/chevron-down.css');
+
+:root{
+    --white-color: #ebebe8;
+    --greyish-color: #d8d7d7;
+
+    --black-color: #31352e;
+    --black-color_w-opacity: #31352eb9;
+
+    --dark-green-color: #778a35;
+    --a_bit-darker-green-color: #546124;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: var(--white-color);
+
+    font-family: 'Times New Roman', Times, serif;
+
+    .socials_container{
+        display: flex;
+        gap: 10px;
+    }
+
+    header{
+        position: sticky;
+        top: 20px;
+        background-color: var(--greyish-color);
+        margin: auto;
+        margin-bottom: 50px;
+        width: 90%;
+        border-bottom-style: solid;
+        border-color: var(--black-color);
+        z-index: 4;
+        
+        .header_components{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            .logo_and_initials{
+                a{
+                    margin-inline: 50px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .logo{
+                    width: 100px;
+                }
+                
+                .initials{
+                    color: var(--dark-green-color);
+                    
+                    font-family: "New Rocker", sans-serif;
+                    font-weight: 400;
+                    font-size: 6rem;
+                    font-style: normal;
+                }
+            }
+            
+            .main_nav{
+                margin-right: 50px;
+                
+                .nav_options_container{
+                    display: flex;
+                    
+                    .socials_container{
+                        display: none;
+
+                        svg{
+                            width: min(36px, 8vw);
+                            height: min(36px, 8vw);
+                            fill: var(--black-color);
+                            transition: fill 0.2s;
+            
+                            &:hover{
+                                fill: var(--black-color_w-opacity);
+                            }
+                        }
+                    }
+                    .nav_options{
+                        display: flex;
+                        list-style: none;
+                        gap: 30px;
+                        
+                        > li{
+                            a{
+                                font-family: "Yatra One", "Times New Roman", Times, sans-serif;
+                                font-weight: 400;
+                                font-size: 1.5rem;
+                                font-style: normal;
+                                color: var(--dark-green-color);
+                            }   
+                            &:hover{
+                                > a{
+                                    color: var(--black-color);
+                                    transition: color 0.3s ease 0s, border 0.1s ease 0s;
+                                }
+                                
+                                .sublist{
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                            }
+                            >i{
+                                display: none;;
+                                cursor: pointer;
+                            }
+                            .sublist{
+                                list-style: none;
+                                position: absolute;
+                                width: max(max-content, inherit);
+                                visibility: hidden;
+                                opacity: 0;
+                                margin-top: 3px;
+                                padding-top: 2px;
+                                background: var(--greyish-color);
+                                transition: all 0.2s ease 0s;
+                                li{
+                                    padding: 3px;
+                                    border-left: solid var(--black-color);
+    
+                                    >a{
+                                        font-size: 1.4rem;
+                                    }
+                                    > a:hover{
+                                        color: var(--black-color);
+                                        transition: color 0.3s ease 0s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .burger_container{
+                cursor: pointer;
+                display: none;
+                position: absolute;
+                top: 45%;
+                right: 60px;
+                width: 20px;
+                height: 20px;
+                transform: scale(2);
+                align-items: center;
+                z-index: 99;
+
+                .gg-menu{
+                    color: var(--dark-green-color);
+                }
+
+                .gg-close{
+                    color: var(--dark-green-color);
+                }
+            }
+        }
+
+        @media (width < 1185px){
+            top: 0px;
+            width: 100%;
+            
+            .header_components{
+
+                .main_nav{
+                    margin-right: 0px;
+                    background-color: var(--greyish-color);
+                    border-left: solid var(--black-color);
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    height: 100svh;
+                    width: 400px;
+                    transform: translateX(100%);
+
+                    .nav_options_container{
+                        flex-direction: column;
+                        box-sizing: border-box;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        padding-top: 150px;
+                        padding-bottom: 40px;
+                        height: 100%;
+                        overflow-y: auto;
+                        overflow-x: hidden;
+                        scrollbar-gutter: stable;
+
+                        .socials_container{
+                            display: flex;
+                            gap: 30px;
+                            align-self: center;
+                            bottom: 0;
+                        }
+
+                        .nav_options{
+                            flex-direction: column;
+                            margin-bottom: 50px;
+                            padding: 0.5em 1em;
+                            border-left: solid var(--black-color);
+                            /* max-height: calc(100vh - min(30vh, 10rem) - 2em); */
+                            
+                            > li{
+                                width: max-content;
+    
+                                >a, >i{
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+                                .sublist{
+                                    position: static;
+                                    overflow: hidden;
+                                }
+                                .sublist[data-visible="false"]{
+                                    visibility: hidden;
+                                    height: 0;
+                                    opacity: 0;
+                                    transition: height 0.3s ease, opacity 0.3s ease;
+                                }
+                                .sublist[data-visible="true"]{
+                                    visibility: visible;
+                                    height: max-content;
+                                    opacity: 1;
+                                }
+                                &:hover{
+                                    .sublist{
+                                        visibility: initial;
+                                        opacity: initial;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .main_nav[data-visible="true"]{
+                    transform: translateX(0%);
+                }
+
+                .burger_container{
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    main{
+        .stacked{
+            display: grid;
+        }
+
+        .stacked > *{
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        .home-page_section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: max(300px, 70%);
+            margin: auto;
+
+            .home-page_section_h{
+                font-family: "Yatra One", 'Times New Roman', sans-serif;
+                font-size: 2.5rem;
+                font-weight: 900;
+                color: var(--black-color);
+            }
+
+            .home-page_subsection1{
+                margin-block: 10px;
+                
+                .carousel_button{
+                    position: absolute;
+                    min-width: 20px;
+                    min-height: 20px;
+                    cursor: pointer;
+                    display: none;
+                    z-index: 2;
+                    background: transparent;
+                    border: 0;
+                }
+
+                .button_left{
+                    top: 50%;
+                    right: 102%;
+                    transform: translateY(-50%);
+                }
+                .button_right{
+                    bottom: 50%;
+                    left: 102%;
+                    transform: translateY(50%);
+                }
+                
+                .cards_container{
+                    height: min(400px, max-content);
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    .cards_list{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 30px;
+                        
+                        .card{
+                            width: min(400px, 100%);
+                            transition: opacity 0.6s ease-out 0s;
+
+                            .vertical_card{
+                                align-items: center;
+    
+                                .card_content{
+                                    display: flex;
+                                    flex-direction: column;
+                                    color: var(--white-color);
+                                    transition: scale 0.3s ease 0s;
+                                    font-family: "Yatra One", "Times New Roman";
+                                    
+                                    .card_title{
+                                        font-size: 1.4rem;
+                                        font-weight: 600;
+                                        text-align: center;
+                                        margin: auto;
+                                        margin-bottom: 35%;
+                                    }
+                                    
+                                    .card_description{
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 1;
+                                        -webkit-box-orient: vertical;
+                                        overflow: hidden;
+                                        margin: 0 20px;
+                                    }
+            
+                                    .card_author{
+                                        font-weight: 400;
+                                        font-size: 0.8rem;
+                                        margin: 0 20px;
+                                    }
+                                }
+                                
+                                img{
+                                    width: 100%;
+                                    z-index: -1;
+                                    filter: brightness(60%);
+                                    transition: transform 0.3s ease 0s;
+                                }
+    
+                                &:hover{
+                                    .card_content{
+            
+                                        .card_title{
+                                            background-color: var(--black-color_w-opacity);
+                                            font-size: 1.4rem;
+                                        }
+
+                                        .card_description,
+                                        .card_author{
+                                            background-color: var(--black-color_w-opacity);
+                                            font-size: 1.1rem;
+                                        }
+            
+                                        .card_description{
+                                            -webkit-line-clamp: none;
+                                        }
+                                    }
+            
+                                    img{
+                                        filter: brightness(50%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                @media (width >= 1185px) {
+                    .vertical_card{
+                        &:hover{
+                            img{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+
+                @media (width < 1185px) {
+                    position: relative;
+                    height: 400px;
+                    width: min(400px, 100%);
+
+                    .carousel_button{
+                        display: block;
+                    }
+
+                    .cards_container{
+                        position: relative;
+                        display: block;
+                        overflow: hidden;
+                        height: 100%;
+                        width: min(400px, 100%);
+                        
+                        .cards_list{
+                            display: block;
+                            height: 100%;
+
+                            .vertical_card{
+                                &:hover{
+                                    img{
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
+
+                            .card{
+                                position: absolute;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .home-page_subsection2{
+                width: 100%;
+                margin-bottom: 50px;
+                position: relative;
+            }
+        }
+
+        .horizontal_card{
+            display: flex;
+            width: 100%;
+            color:var(--black-color);
+            border-top: solid var(--black-color);
+            border-bottom: solid var(--black-color);
+            margin: 10px 0;
+            transition: background 0.2s ease 0s;
+
+            .card_content{
+                margin: 10px 10px;
+                width: 100%;
+                font-family: "Yatra One", system-ui;
+                display: flex;
+                flex-direction: column;
+
+                .card_description{
+                    margin-top: 20px;
+                }
+                
+                .card_author{
+                    align-self: flex-end;
+                }
+            }
+
+            img{
+                object-fit: cover;
+                padding: 10px;
+                width: 100px;
+            }
+
+            &:hover{
+                background-color: var(--greyish-color);
+
+                .card_title{
+                    color: var(--a_bit-darker-green-color);
+                }
+            }
+
+            @media (width < 900px) {
+                .card_description{
+                    display: none;
+                }
+                .card_author{
+                    margin-top: 44px;
+                }
+            }
+        }
+
+        .review_section{
+            width: 90%;
+            margin: auto;
+
+            #review_header{
+                display: grid;
+                gap: 40px;
+
+                > *:not(.img_and_title_container) {
+                    border-bottom: var(--greyish-color) solid;
+                    border-width: 1px;
+                    padding-bottom: 30px;
+                }
+
+                .img_and_title_container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    margin-block: 50px;
+                    
+                    >img{
+                        width: min(100%, 1000px);
+                        
+                    }
+                    .title{
+                        position: absolute;
+                        bottom: -8%;
+
+                        display: grid;
+                        gap: 10px;
+
+                        padding: 20px;
+
+                        text-align: center;
+                        background-color: var(--black-color_w-opacity);
+                        color: var(--white-color);
+
+                        .title_h{
+                            font-size: 1.8rem;
+                        }
+                        .title_desc{
+                            font-size: 1.3rem;
+                        }
+                    }
+
+                }
+                .review_details_container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    gap: 40px;
+
+                    .adp_container{
+                        display: flex;
+
+                        gap: 10px;
+
+                        font-size: 1.1rem;
+                        font-style: italic;
+                    }
+                    .review_score{
+                        font-family: "Archivo Black", sans-serif;
+                        font-size: 4rem;
+                        font-weight: 900;
+                        color: var(--black-color);
+                    }
+                }
+                .game_details_container{
+                    display: flex;
+                    justify-content: center;
+                    gap: 50px;
+                    margin-bottom: 40px;
+
+                    >p{
+                        text-align: center;
+                    }
+                }
+
+                @media (width < 650px) {
+                    .review_details_container{
+                        .adp_container{
+                            flex-direction: column;
+                        }
+                    }
+                    .game_details_container{
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                }
+            }
+
+            #review_main{
+                width: min(75%, 800px);
+                display: grid;
+                gap: 50px;
+
+                margin-inline: auto;
+                margin-block-end: 50px;                
+            
+                .review_main_subsection{
+                    display: grid;
+                    gap: 20px;
+
+                    font-size: 1.125rem;
+                    line-height: 1.7;
+
+                    h3{
+                        margin: auto;
+                    }
+                }
+            }
+        }
+
+        #selection_container{
+            width: max(300px, 70%);
+
+            margin: auto;
+            display: grid;
+            gap: 40px;
+
+            h2{
+                font-family: "Yatra One", system-ui;
+                a{
+                    color: var(--black-color);
+                }
+            }
+        }
+    }
+
+    footer{
+        margin-top: 50px;
+        background-color: var(--black-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        
+        .footer_h{
+            margin-top: 30px;
+
+            a{
+                font-family: "New Rocker", sans-serif;
+                font-weight: 400;
+                font-size: 1.5rem;
+                font-style: normal;
+
+                color: var(--white-color);
+            }
+        }
+
+        .footer_lists_container{
+            display: flex;
+            width: 85%;
+            justify-content: center;
+            gap: 50px;
+
+            .footer_list{
+                color: var(--white-color);
+                line-height: 1.5;
+
+                a{
+                    color: var(--white-color);
+                    transition: color 0.2s;
+
+                    &:hover{
+                        color: var(--dark-green-color);
+                    }
+                }
+            }
+        }
+
+        .socials_container{
+            margin-bottom: 30px;
+
+            svg{
+                fill: var(--white-color);
+                transition: fill 0.2s;
+
+                &:hover{
+                    fill: var(--dark-green-color);
+                }
+            }
+        }
+    }
+}

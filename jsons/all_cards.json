@@ -1,0 +1,173 @@
+{
+    "lost_ark": {
+        "title": "Lost Ark",
+        "desc": "The Korean Diablo no one knew they wanted",
+        "author": "Rado Radev",
+        "image": "../assets/lost_ark_1200.jpeg",
+        "review_id": "lost_ark_review",
+        "genre": "mmo rpg action",
+        "platform": "pc"
+    },
+    "elden_ring": {
+        "title": "Elden Ring",
+        "desc": "A Masterpiece in Open-World Design",
+        "author": "Rado Radev",
+        "image": "../assets/elden_ring_1200.jpeg",
+        "review_id": "elden_ring_review",
+        "genre": "rpg action adventure",
+        "platform": "pc ps4 ps5 xboxone xboxxs"
+    },
+    "age_of_empires_2": {
+        "title": "Age of Empires 2:<br>Definitive Edition",
+        "desc": "A historic classic",
+        "author": "Rado Radev",
+        "image": "../assets/aoe2de_1200.jpeg",
+        "review_id": "age_of_empires_2_review",
+        "genre": "rts",
+        "platform": "pc xboxone xboxxs"
+    },
+    "dead_by_daylight": {
+        "title": "Dead By Daylight",
+        "desc": "In the killer's shoes",
+        "author": "Rado Radev",
+        "image": "../assets/dead_by_daylight_1200.jpeg",
+        "review_id": "dead_by_daylight_review",
+        "genre": "horror",
+        "platform": "pc ps4 ps5 nintendoswitch xboxone xboxxs"
+    },
+    "god_of_war": {
+        "title": "God of War: Ragnarok",
+        "desc": "A Sequel Worthy of the Gods",
+        "author": "Rado Radev",
+        "image": "../assets/god_of_war_1200.jpeg",
+        "review_id": "god_of_war_review",
+        "genre": "rpg action adventure",
+        "platform": "pc ps4 ps5"
+    },
+    "resident_evil": {
+        "title": "Resident Evil Village",
+        "desc": "Horror at its Finest",
+        "author": "Rado Radev",
+        "image": "../assets/resident_evil_1200.jpeg",
+        "review_id": "resident_evil_review",
+        "genre": "adventure horror",
+        "platform": "pc ps4 ps5 nintendoswitch xboxone xboxxs"
+    },
+    "final_fantasy": {
+        "title": "Final Fantasy XIV: Endwalker",
+        "desc": "The Ultimate Expansion",
+        "author": "Rado Radev",
+        "image": "../assets/final_fantasy_xiv_1200.jpeg",
+        "review_id": "final_fantasy_review",
+        "genre": "mmo rpg",
+        "platform": "pc ps5 ps4 xboxxs"
+    },
+    "hogwarts_legacy": {
+        "title": "Hogwarts Legacy",
+        "desc": "Magic Unleashed",
+        "author": "Rado Radev",
+        "image": "../assets/hogwarts_legacy_1200.jpeg",
+        "review_id": "hogwarts_legacy_review",
+        "genre": "rpg action adventure",
+        "platform": "pc ps4 ps5 nintendoswitch xboxone xboxxs"
+    },
+    "cyberpunk_2077": {
+        "title": "Cyberpunk 2077",
+        "desc": "Redemption Through Patches",
+        "author": "Rado Radev",
+        "image": "../assets/cyberpunk_2077_1200.jpeg",
+        "review_id": "cyberpunk_2077_review",
+        "genre": "action adventure",
+        "platform": "pc ps4 ps5 xboxone xboxxs"
+    },
+    "the_witcher": {
+        "title": "The Witcher 3: Wild Hunt",
+        "desc": "Next-Gen Upgrade",
+        "author": "Rado Radev",
+        "image": "../assets/the_witcher_3_1200.jpeg",
+        "review_id": "the_witcher_review",
+        "genre": "rpg action adventure",
+        "platform": "pc ps4 ps5 xboxone xboxxs"
+    },
+    "assasins_creed": {
+        "title": "Assassin's Creed Valhalla",
+        "desc": "Dawn of Ragnarok",
+        "author": "Rado Radev",
+        "image": "../assets/assassins_creed_1200.jpeg",
+        "review_id": "assassins_creed_review",
+        "genre": "action adventure",
+        "platform": "pc ps4 ps5 xboxone xboxxs"
+    },
+    "starfield": {
+        "title": "Starfield",
+        "desc": "Embark on an Interstellar Shitshow",
+        "author": "Rado Radev",
+        "image": "../assets/starfield_1200.jpeg",
+        "review_id": "starfield_review",
+        "genre": "rpg adventure",
+        "platform": "pc xboxxs"
+    },
+    "forspoken": {
+        "title": "Forspoken",
+        "desc": "A New Fantasy Adventure from the Creators of Final Fantasy XV",
+        "author": "Rado Radev",
+        "image": "../assets/forspoken_1200.jpeg",
+        "review_id": "forspoken_review",
+        "genre": "rpg action adventure",
+        "platform": "pc ps5"
+    },
+    "saints_row": {
+        "title": "Saints Row V",
+        "desc": "Back in a Reboot that Promises Wild Action and Humor",
+        "author": "Rado Radev",
+        "image": "../assets/saints_row_1200.jpeg",
+        "review_id": "saints_row_review",
+        "genre": "rpg action",
+        "platform": "pc ps4 ps5 xboxone xboxxs"
+    },
+    "dying_light": {
+        "title": "Dying Light 2 Stay Human",
+        "desc": "A Post-apocalyptic World Filled with Zombies and Danger",
+        "author": "Rado Radev",
+        "image": "../assets/dying_light_1200.jpeg",
+        "review_id": "dying_light_review",
+        "genre": "action adventure horror",
+        "platform": "pc ps4 ps5 nintendoswitch xboxone xboxxs"
+    },
+    "sifu": {
+        "title": "Sifu",
+        "desc": "Master Kung Fu and Take on Your Enemies",
+        "author": "Rado Radev",
+        "image": "../assets/sifu_1200.jpeg",
+        "review_id": "sifu_review",
+        "genre": "action",
+        "platform": "pc ps4 ps5 nintendoswitch xboxone xboxxs"
+    },
+    "gran_turismo": {
+        "title": "Gran Turismo 7",
+        "desc": "Get Behind the Wheel in the Latest Installment of this Iconic Racing Series",
+        "author": "Rado Radev",
+        "image": "../assets/gran_turismo_1200.jpeg",
+        "review_id": "gran_turismo_review",
+        "genre": "racing",
+        "platform": "ps4 ps5"
+    },
+    "the_legend_of_zelda": {
+        "title": "The Legend of Zelda:<br>Tears of the Kingdom",
+        "desc": "The Highly Anticipated Sequel to One of the Greatest Games of All Time",
+        "author": "Rado Radev",
+        "image": "../assets/legend_of_zelda_1200.jpeg",
+        "review_id": "the_legend_of_zelda_review",
+        "genre": "rpg action adventure",
+        "platform": "nintendoswitch"
+    },
+    "avowed": {
+        "title": "Avowed",
+        "desc": "Obsidian Entertainment's New First-person RPG Set in the World of Eora",
+        "author": "Rado Radev",
+        "image": "../assets/avowed_1200.jpeg",
+        "review_id": "avowed_review",
+        "genre": "rpg action adventure",
+        "platform": "pc xboxxs"
+    }
+}
