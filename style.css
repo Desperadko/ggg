@@ -441,6 +441,8 @@ body{
             }
 
             .home-page_subsection2{
+                display: grid;
+                gap: 10px;
                 width: 100%;
                 margin-bottom: 50px;
                 position: relative;
@@ -453,7 +455,6 @@ body{
             color:var(--black-color);
             border-top: solid var(--black-color);
             border-bottom: solid var(--black-color);
-            margin: 10px 0;
             transition: background 0.2s ease 0s;
 
             .card_content{
@@ -620,15 +621,10 @@ body{
             display: grid;
             gap: 40px;
 
-            .selection_section{
-                overflow: hidden;
-                transition: height 0.5s ease-out;
-            }
-
             h2{
                 font-family: "Yatra One", system-ui;
                 width: max-content;
-
+                
                 a{
                     color: var(--black-color);
                     transition: color 0.2s;
@@ -638,6 +634,13 @@ body{
                         color:var(--a_bit-darker-green-color)
                     }
                 }
+            }
+            
+            .cards_container{
+                display: grid;
+                gap: 10px;
+                overflow: hidden;
+                transition: height 0.5s ease-out;
             }
         }
     }
