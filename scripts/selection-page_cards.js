@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
     const selection = params.get("selection");
 
-
     const container = document.getElementById('selection_container');
 
     fetch("../jsons/all_cards.json")
@@ -87,28 +86,29 @@ document.addEventListener("DOMContentLoaded", () => {
 function setUpCards(selection, games, container){
     let section;
     let h2;
-    let cardsContainer;
     let article;
-
+    let cardsContainer;
+    
     if(typeof selection.name === 'string'){
         switch(selection.type)
         {
             case 'genre':
-                section = document.createElement('section');
-                section.id = `${selection.name}_section`;
-        
-                h2 = document.createElement('h2');
-                h2.innerHTML = `
-                    <a href="selection-page.html?selection=${selection.name}">${selection.name.toUpperCase()}</a>
-                `;
-                section.appendChild(h2);
-
-                cardsContainer = document.createElement("div");
-                cardsContainer.classList.add("cards_container");
-
-                games.forEach(game => {
-                    if(game.genre.includes(selection.name)){
-                        article = document.createElement('article');
+                    section = document.createElement('section');
+                    section.id = `${selection.name}_section`;
+                    section.classList.add('selection_section');
+            
+                    h2 = document.createElement('h2');
+                    h2.innerHTML = `
+                        <a href="selection-page.html?selection=${selection.name}">${selection.name.toUpperCase()}</a>
+                    `;
+                    section.appendChild(h2);
+    
+                    cardsContainer = document.createElement("div");
+                    cardsContainer.classList.add("cards_container");
+    
+                    games.forEach(game => {
+                        if(game.genre.includes(selection.name)){
+                            article = document.createElement('article');
                             article.innerHTML = `
                                 <a href="review-prototype.html?review=${game.review_id}" class="horizontal_card">
                                     <img src="${game.image}" alt="${game.title.toLowerCase()} image">
@@ -119,29 +119,30 @@ function setUpCards(selection, games, container){
                                     </div>
                                 </a>
                             `;
-                        cardsContainer.appendChild(article);
-                    }
-                });
-
-                section.appendChild(cardsContainer);
-                container.appendChild(section);
+                            cardsContainer.appendChild(article);
+                        }
+                    });
+    
+                    section.appendChild(cardsContainer);
+                    container.appendChild(section);
             break;
             case 'platform':
-                section = document.createElement('section');
-                section.id = `${selection.name}_section`;
-        
-                h2 = document.createElement('h2');
-                h2.innerHTML = `
-                    <a href="selection-page.html?selection=${selection.name}">${selection.name.toUpperCase()}</a>
-                `;
-                section.appendChild(h2);
-
-                cardsContainer = document.createElement('div');
-                cardsContainer.classList.add("cards_container");
-
-                games.forEach(game => {
-                    if(game.platform.includes(selection.name)){
-                        article = document.createElement('article');
+                    section = document.createElement('section');
+                    section.id = `${selection.name}_section`;
+                    section.classList.add('selection_section');
+            
+                    h2 = document.createElement('h2');
+                    h2.innerHTML = `
+                        <a href="selection-page.html?selection=${selection.name}">${selection.name.toUpperCase()}</a>
+                    `;
+                    section.appendChild(h2);
+    
+                    cardsContainer = document.createElement('div');
+                    cardsContainer.classList.add("cards_container");
+    
+                    games.forEach(game => {
+                        if(game.platform.includes(selection.name)){
+                            article = document.createElement('article');
                             article.innerHTML = `
                                 <a href="review-prototype.html?review=${game.review_id}" class="horizontal_card">
                                     <img src="${game.image}" alt="${game.title.toLowerCase()} image">
@@ -152,12 +153,12 @@ function setUpCards(selection, games, container){
                                     </div>
                                 </a>
                             `;
-                        cardsContainer.appendChild(article);
-                    }
-                });
-
-                section.appendChild(cardsContainer);
-                container.appendChild(section);
+                            cardsContainer.appendChild(article);
+                        }
+                    });
+    
+                    section.appendChild(cardsContainer);
+                    container.appendChild(section);
             break;
         }
     }
@@ -178,63 +179,33 @@ function setUpCards(selection, games, container){
                     cardsContainer = document.createElement('div');
                     cardsContainer.classList.add("cards_container");
                     
-                    // let card = null;
-                    // let cardStyle = null;
-
                     let numOfCards = 0;
                     
                     for(let i = 0; i < games.length; i++){
                         if(games[i].genre.includes(genre.name)){
                             article = document.createElement('article');
                             article.innerHTML = `
-                            <a href="review-prototype.html?review=${games[i].review_id}" class="horizontal_card">
-                            <img src="${games[i].image}" alt="${games[i].title.toLowerCase()} image">
+                                <a href="review-prototype.html?review=${games[i].review_id}" class="horizontal_card">
+                                    <img src="${games[i].image}" alt="${games[i].title.toLowerCase()} image">
                                     <div class="card_content">
-                                    <h3 class="card_title">${games[i].title}</h3>
-                                    <p class="card_description">${games[i].desc}</p>
-                                    <p class="card_author">author: ${games[i].author}</p>
+                                        <h3 class="card_title">${games[i].title}</h3>
+                                        <p class="card_description">${games[i].desc}</p>
+                                        <p class="card_author">author: ${games[i].author}</p>
                                     </div>
-                                    </a>
-                                    `;
+                                </a>
+                            `;
 
                             cardsContainer.appendChild(article);
 
-                            // if(card === null){
-                            //     card = article;
-                            // }
-                            
                             numOfCards++;
+
+                            if(numOfCards > 2)
+                                break;
                         }
-                    };
+                    }
 
                     section.appendChild(cardsContainer);
                     container.appendChild(section);
-
-                    // let arrowContainer = document.createElement('div');
-
-                    // let arrowDown = document.createElement('i');
-                    // arrowDown.classList.add("arrow");
-                    // arrowDown.innerHTML = `
-                    // 	<img src="../assets/chevron-down.svg" alt="">
-                    // `;
-                    // let arrowUp = document.createElement('i');
-                    // arrowUp.classList.add("arrow");
-                    // arrowUp.innerHTML = `
-                    //     <img src="../assets/chevron-up.svg" alt="">
-                    // `;
-                    
-                    // arrowContainer.appendChild(arrowUp);
-                    // arrowContainer.appendChild(arrowDown);
-                    // section.appendChild(arrowContainer);
-
-                    // cardStyle = window.getComputedStyle(card.children[0]);
-
-                    // if(numOfCards > 3){
-                    //     cardsContainer.style.height = h2.offsetHeight + card.offsetHeight * 3 + cardsContainer.style.gap + "px";
-                    // }
-                    // else{
-                    //     cardsContainer.style.height = h2.offsetHeight + card.offsetHeight * numOfCards + cardsContainer.style.gap + "px";
-                    // }
                 });
             break;
             case 'platforms':
@@ -252,7 +223,8 @@ function setUpCards(selection, games, container){
                     cardsContainer = document.createElement('div');
                     cardsContainer.classList.add("cards_container");
 
-                    // let numOfCards = 0;
+                    let numOfCards = 0;
+
                     for(let i = 0; i < games.length; i++){
                         if(games[i].platform.includes(platform.name)){
                             article = document.createElement('article');
@@ -267,11 +239,13 @@ function setUpCards(selection, games, container){
                                 </a>
                             `;
                             cardsContainer.appendChild(article);
-                            // numOfCards++;
-                            // if(numOfCards > 2)
-                            //     break;
+
+                            numOfCards++;
+
+                            if(numOfCards > 2)
+                                break;
                         }
-                    };
+                    }
 
                     section.appendChild(cardsContainer);
                     container.appendChild(section);

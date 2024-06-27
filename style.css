@@ -628,10 +628,9 @@ body{
                 a{
                     color: var(--black-color);
                     transition: color 0.2s;
-                }
-                &:hover{
-                    a{
-                        color:var(--a_bit-darker-green-color)
+
+                    &:hover{
+                        color: var(--a_bit-darker-green-color);
                     }
                 }
             }

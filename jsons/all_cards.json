@@ -18,7 +18,7 @@
         "platform": "pc ps4 ps5 xboxone xboxxs"
     },
     "age_of_empires_2": {
-        "title": "Age of Empires 2:<br>Definitive Edition",
+        "title": "Age of Empires 2: Definitive Edition",
         "desc": "A historic classic",
         "author": "Rado Radev",
         "image": "../assets/aoe2de_1200.jpeg",
@@ -153,7 +153,7 @@
         "platform": "ps4 ps5"
     },
     "the_legend_of_zelda": {
-        "title": "The Legend of Zelda:<br>Tears of the Kingdom",
+        "title": "The Legend of Zelda: Tears of the Kingdom",
         "desc": "The Highly Anticipated Sequel to One of the Greatest Games of All Time",
         "author": "Rado Radev",
         "image": "../assets/legend_of_zelda_1200.jpeg",
