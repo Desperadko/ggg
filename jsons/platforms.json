@@ -1,0 +1,20 @@
+{
+  "pc": {
+    "label": "PC"
+  },
+  "ps4": {
+    "label": "PS4"
+  },
+  "ps5": {
+    "label": "PS5"
+  },
+  "xboxOne": {
+    "label": "XBox One"
+  },
+  "xboxXAndS": {
+    "label": "XBox X & S"
+  },
+  "switch": {
+    "label": "Nintendo Switch"
+  }
+}

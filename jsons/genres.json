@@ -1,0 +1,23 @@
+{
+  "mmo": {
+    "label": "MMO"
+  },
+  "rpg": {
+    "label": "RPG"
+  },
+  "horror": {
+    "label": "Horror"
+  },
+  "adventure": {
+    "label": "Adventure"
+  },
+  "racing": {
+    "label": "Racing"
+  },
+  "rts": {
+    "label": "RTS"
+  },
+  "action": {
+    "label": "Action"
+  }
+}

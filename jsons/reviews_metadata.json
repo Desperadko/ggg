@@ -1,0 +1,154 @@
+{
+  "lost_ark": {
+    "title": "Lost Ark",
+    "desc": "The Korean Diablo no one knew they wanted",
+    "author": "Rado Radev",
+    "image": "/assets/lost_ark_1200.jpeg",
+    "genres": ["mmo", "rpg"],
+    "platforms": ["pc"]
+  },
+  "elden_ring": {
+    "title": "Elden Ring",
+    "desc": "A Masterpiece in Open-World Design",
+    "author": "Rado Radev",
+    "image": "/assets/elden_ring_1200.jpeg",
+    "genres": ["rpg", "action", "adventure"],
+    "platforms": ["pc", "ps4", "ps5", "xboxOne", "xboxXAndS"]
+  },
+  "age_of_empires_2": {
+    "title": "Age of Empires 2: Definitive Edition",
+    "desc": "A historic classic",
+    "author": "Rado Radev",
+    "image": "/assets/aoe2de_1200.jpeg",
+    "genres": ["rts"],
+    "platforms": ["pc", "xboxOne", "xboxXAndS"]
+  },
+  "dead_by_daylight": {
+    "title": "Dead By Daylight",
+    "desc": "In the killer's shoes",
+    "author": "Rado Radev",
+    "image": "/assets/dead_by_daylight_1200.jpeg",
+    "genres": ["horror"],
+    "platforms": ["pc", "ps4", "ps5", "switch", "xboxOne", "xboxXAndS"]
+  },
+  "god_of_war": {
+    "title": "God of War: Ragnarok",
+    "desc": "A Sequel Worthy of the Gods",
+    "author": "Rado Radev",
+    "image": "/assets/god_of_war_1200.jpeg",
+    "genres": ["rpg", "action", "adventure"],
+    "platforms": ["pc", "ps4", "ps5"]
+  },
+  "resident_evil": {
+    "title": "Resident Evil Village",
+    "desc": "Horror at its Finest",
+    "author": "Rado Radev",
+    "image": "/assets/resident_evil_1200.jpeg",
+    "genres": ["adventure", "horror"],
+    "platforms": ["pc", "ps4", "ps5", "switch", "xboxOne", "xboxXAndS"]
+  },
+  "final_fantasy": {
+    "title": "Final Fantasy XIV: Endwalker",
+    "desc": "The Ultimate Expansion",
+    "author": "Rado Radev",
+    "image": "/assets/final_fantasy_xiv_1200.jpeg",
+    "genres": ["mmo", "rpg"],
+    "platforms": ["pc", "ps5", "ps4", "xboxXAndS"]
+  },
+  "hogwarts_legacy": {
+    "title": "Hogwarts Legacy",
+    "desc": "Magic Unleashed",
+    "author": "Rado Radev",
+    "image": "/assets/hogwarts_legacy_1200.jpeg",
+    "genres": ["rpg", "action", "adventure"],
+    "platforms": ["pc", "ps4", "ps5", "switch", "xboxOne", "xboxXAndS"]
+  },
+  "cyberpunk_2077": {
+    "title": "Cyberpunk 2077",
+    "desc": "Redemption Through Patches",
+    "author": "Rado Radev",
+    "image": "/assets/cyberpunk_2077_1200.jpeg",
+    "genres": ["action", "adventure"],
+    "platforms": ["pc", "ps4", "ps5", "xboxOne", "xboxXAndS"]
+  },
+  "the_witcher": {
+    "title": "The Witcher 3: Wild Hunt",
+    "desc": "Next-Gen Upgrade",
+    "author": "Rado Radev",
+    "image": "/assets/the_witcher_3_1200.jpeg",
+    "genres": ["rpg", "action", "adventure"],
+    "platforms": ["pc", "ps4", "ps5", "xboxOne", "xboxXAndS"]
+  },
+  "assassins_creed": {
+    "title": "Assassin's Creed Valhalla",
+    "desc": "Dawn of Ragnarok",
+    "author": "Rado Radev",
+    "image": "/assets/assassins_creed_1200.jpeg",
+    "genres": ["action", "adventure"],
+    "platforms": ["pc", "ps4", "ps5", "xboxOne", "xboxXAndS"]
+  },
+  "starfield": {
+    "title": "Starfield",
+    "desc": "Embark on an Interstellar Shitshow",
+    "author": "Rado Radev",
+    "image": "/assets/starfield_1200.jpeg",
+    "genres": ["rpg", "adventure"],
+    "platforms": ["pc", "xboxXAndS"]
+  },
+  "forspoken": {
+    "title": "Forspoken",
+    "desc": "A New Fantasy Adventure from the Creators of Final Fantasy XV",
+    "author": "Rado Radev",
+    "image": "/assets/forspoken_1200.jpeg",
+    "genres": ["rpg", "action", "adventure"],
+    "platforms": ["pc", "ps5"]
+  },
+  "saints_row": {
+    "title": "Saints Row V",
+    "desc": "Back in a Reboot that Promises Wild Action and Humor",
+    "author": "Rado Radev",
+    "image": "/assets/saints_row_1200.jpeg",
+    "genres": ["rpg", "action"],
+    "platforms": ["pc", "ps4", "ps5", "xboxOne", "xboxXAndS"]
+  },
+  "dying_light": {
+    "title": "Dying Light 2 Stay Human",
+    "desc": "A Post-apocalyptic World Filled with Zombies and Danger",
+    "author": "Rado Radev",
+    "image": "/assets/dying_light_1200.jpeg",
+    "genres": ["action", "adventure", "horror"],
+    "platforms": ["pc", "ps4", "ps5", "switch", "xboxOne", "xboxXAndS"]
+  },
+  "sifu": {
+    "title": "Sifu",
+    "desc": "Master Kung Fu and Take on Your Enemies",
+    "author": "Rado Radev",
+    "image": "/assets/sifu_1200.jpeg",
+    "genres": ["action"],
+    "platforms": ["pc", "ps4", "ps5", "switch", "xboxOne", "xboxXAndS"]
+  },
+  "gran_turismo": {
+    "title": "Gran Turismo 7",
+    "desc": "Get Behind the Wheel in the Latest Installment of this Iconic Racing Series",
+    "author": "Rado Radev",
+    "image": "/assets/gran_turismo_1200.jpeg",
+    "genres": ["racing"],
+    "platforms": ["ps4", "ps5"]
+  },
+  "the_legend_of_zelda": {
+    "title": "The Legend of Zelda: Tears of the Kingdom",
+    "desc": "The Highly Anticipated Sequel to One of the Greatest Games of All Time",
+    "author": "Rado Radev",
+    "image": "/assets/legend_of_zelda_1200.jpeg",
+    "genres": ["rpg", "action", "adventure"],
+    "platforms": ["switch"]
+  },
+  "avowed": {
+    "title": "Avowed",
+    "desc": "Obsidian Entertainment's New First-person RPG Set in the World of Eora",
+    "author": "Rado Radev",
+    "image": "/assets/avowed_1200.jpeg",
+    "genres": ["rpg", "action", "adventure"],
+    "platforms": ["pc", "xboxXAndS"]
+  }
+}

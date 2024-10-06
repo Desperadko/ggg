@@ -7,14 +7,14 @@
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/chevron-down.css');
 
 :root{
-    --white-color: #ebebe8;
-    --greyish-color: #d8d7d7;
+    --white: #ebebe8;
+    --grey: #d8d7d7;
 
-    --black-color: #31352e;
-    --black-color_w-opacity: #31352eb9;
+    --black: #31352e;
+    --black_w-opacity: #31352eb9;
 
-    --dark-green-color: #778a35;
-    --a_bit-darker-green-color: #546124;
+    --green: #778a35;
+    --dark_green: #546124;
 }
 
 *{
@@ -24,8 +24,17 @@
     list-style: none;
 }
 
+a{
+    color: black;
+    transition: color 0.1s;
+    
+    &:hover{
+        color: var(--green);
+    };
+}
+
 body{
-    background-color: var(--white-color);
+    background: var(--white);
 
     font-family: 'Times New Roman', Times, serif;
 
@@ -37,12 +46,12 @@ body{
     header{
         position: sticky;
         top: 20px;
-        background-color: var(--greyish-color);
+        background: var(--grey);
         margin: auto;
         margin-bottom: 50px;
         width: 90%;
         border-bottom-style: solid;
-        border-color: var(--black-color);
+        border: var(--black);
         z-index: 4;
         
         .header_components{
@@ -63,7 +72,7 @@ body{
                 }
                 
                 .initials{
-                    color: var(--dark-green-color);
+                    color: var(--green);
                     
                     font-family: "New Rocker", sans-serif;
                     font-weight: 400;
@@ -84,11 +93,11 @@ body{
                         svg{
                             width: min(36px, 8vw);
                             height: min(36px, 8vw);
-                            fill: var(--black-color);
+                            fill: var(--black);
                             transition: fill 0.2s;
             
                             &:hover{
-                                fill: var(--black-color_w-opacity);
+                                fill: var(--black_w-opacity);
                             }
                         }
                     }
@@ -103,11 +112,11 @@ body{
                                 font-weight: 400;
                                 font-size: 1.5rem;
                                 font-style: normal;
-                                color: var(--dark-green-color);
+                                color: var(--green);
                             }   
                             &:hover{
                                 > a{
-                                    color: var(--black-color);
+                                    color: var(--black);
                                     transition: color 0.3s ease 0s, border 0.1s ease 0s;
                                 }
                                 
@@ -128,17 +137,17 @@ body{
                                 opacity: 0;
                                 margin-top: 3px;
                                 padding-top: 2px;
-                                background: var(--greyish-color);
+                                background: var(--grey);
                                 transition: all 0.2s ease 0s;
                                 li{
                                     padding: 3px;
-                                    border-left: solid var(--black-color);
+                                    border-left: solid var(--black);
     
                                     >a{
                                         font-size: 1.4rem;
                                     }
                                     > a:hover{
-                                        color: var(--black-color);
+                                        color: var(--black);
                                         transition: color 0.3s ease 0s;
                                     }
                                 }
@@ -161,11 +170,11 @@ body{
                 z-index: 99;
 
                 .gg-menu{
-                    color: var(--dark-green-color);
+                    color: var(--green);
                 }
 
                 .gg-close{
-                    color: var(--dark-green-color);
+                    color: var(--green);
                 }
             }
         }
@@ -178,8 +187,8 @@ body{
 
                 .main_nav{
                     margin-right: 0px;
-                    background-color: var(--greyish-color);
-                    border-left: solid var(--black-color);
+                    background: var(--grey);
+                    border-left: solid var(--black);
                     position: fixed;
                     top: 0;
                     right: 0;
@@ -210,7 +219,7 @@ body{
                             flex-direction: column;
                             margin-bottom: 50px;
                             padding: 0.5em 1em;
-                            border-left: solid var(--black-color);
+                            border-left: solid var(--black);
                             /* max-height: calc(100vh - min(30vh, 10rem) - 2em); */
                             
                             > li{
@@ -279,7 +288,7 @@ body{
                 font-family: "Yatra One", 'Times New Roman', sans-serif;
                 font-size: 2.5rem;
                 font-weight: 900;
-                color: var(--black-color);
+                color: var(--black);
             }
 
             .home-page_subsection1{
@@ -331,7 +340,7 @@ body{
                                 .card_content{
                                     display: flex;
                                     flex-direction: column;
-                                    color: var(--white-color);
+                                    color: var(--white);
                                     transition: scale 0.3s ease 0s;
                                     font-family: "Yatra One", "Times New Roman";
                                     
@@ -369,13 +378,13 @@ body{
                                     .card_content{
             
                                         .card_title{
-                                            background-color: var(--black-color_w-opacity);
+                                            background: var(--black_w-opacity);
                                             font-size: 1.4rem;
                                         }
 
                                         .card_description,
                                         .card_author{
-                                            background-color: var(--black-color_w-opacity);
+                                            background: var(--black_w-opacity);
                                             font-size: 1.1rem;
                                         }
             
@@ -452,9 +461,9 @@ body{
         .horizontal_card{
             display: flex;
             width: 100%;
-            color:var(--black-color);
-            border-top: solid var(--black-color);
-            border-bottom: solid var(--black-color);
+            color:var(--black);
+            border-top: solid var(--black);
+            border-bottom: solid var(--black);
             transition: background 0.2s ease 0s;
 
             .card_content{
@@ -480,10 +489,10 @@ body{
             }
 
             &:hover{
-                background-color: var(--greyish-color);
+                background: var(--grey);
 
                 .card_title{
-                    color: var(--a_bit-darker-green-color);
+                    color: var(--dark_green);
                 }
             }
 
@@ -506,7 +515,7 @@ body{
                 gap: 40px;
 
                 > *:not(.img_and_title_container) {
-                    border-bottom: var(--greyish-color) solid;
+                    border-bottom: var(--grey) solid;
                     border-width: 1px;
                     padding-bottom: 30px;
                 }
@@ -533,8 +542,8 @@ body{
                         padding: 20px;
 
                         text-align: center;
-                        background-color: var(--black-color_w-opacity);
-                        color: var(--white-color);
+                        background: var(--black_w-opacity);
+                        color: var(--white);
 
                         .title_h{
                             font-size: 1.8rem;
@@ -565,7 +574,7 @@ body{
                         font-family: "Archivo Black", sans-serif;
                         font-size: 4rem;
                         font-weight: 900;
-                        color: var(--black-color);
+                        color: var(--black);
                     }
                 }
                 .game_details_container{
@@ -626,11 +635,11 @@ body{
                 width: max-content;
                 
                 a{
-                    color: var(--black-color);
+                    color: var(--black);
                     transition: color 0.2s;
 
                     &:hover{
-                        color: var(--a_bit-darker-green-color);
+                        color: var(--dark_green);
                     }
                 }
             }
@@ -646,7 +655,7 @@ body{
 
     footer{
         margin-top: 50px;
-        background-color: var(--black-color);
+        background: var(--black);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -662,7 +671,7 @@ body{
                 font-size: 1.5rem;
                 font-style: normal;
 
-                color: var(--white-color);
+                color: var(--white);
             }
         }
 
@@ -673,15 +682,15 @@ body{
             gap: 50px;
 
             .footer_list{
-                color: var(--white-color);
+                color: var(--white);
                 line-height: 1.5;
 
                 a{
-                    color: var(--white-color);
+                    color: var(--white);
                     transition: color 0.2s;
 
                     &:hover{
-                        color: var(--dark-green-color);
+                        color: var(--green);
                     }
                 }
             }
@@ -691,11 +700,11 @@ body{
             margin-bottom: 30px;
 
             svg{
-                fill: var(--white-color);
+                fill: var(--white);
                 transition: fill 0.2s;
 
                 &:hover{
-                    fill: var(--dark-green-color);
+                    fill: var(--green);
                 }
             }
         }

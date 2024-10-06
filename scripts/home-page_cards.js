@@ -1,65 +1,46 @@
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("../jsons/home-page_cards.json")
-        .then(responce => responce.json())
-        .then(data => {
-            let cards;
+document.addEventListener("DOMContentLoaded", async () => {
+  const cardsPromise = fetchAndParse("../jsons/home-page_cards.json");
+  const metadataPromise = fetchAndParse("../jsons/reviews_metadata.json");
 
-            let cardsListContainer1 = document.getElementById('trending_cards_list1');
-            let cardsListContainer2 = document.getElementById('trending_cards_list2');
-            cards = data.trending;
-            placeCards(cards, cardsListContainer1, cardsListContainer2);
+  const promises = await Promise.all([cardsPromise, metadataPromise]);
 
-            cardsListContainer1 = document.getElementById('latest_cards_list1');
-            cardsListContainer2 = document.getElementById('latest_cards_list2');
-            cards = data.latest;
-            placeCards(cards, cardsListContainer1, cardsListContainer2);
+  const [cards, metadata] = promises;
 
-            cardsListContainer1 = document.getElementById('new-releases_cards_list1');
-            cardsListContainer2 = document.getElementById('new-releases_cards_list2');
-            cards = data.new_releases;
-            placeCards(cards, cardsListContainer1, cardsListContainer2);
-
-            cardsListContainer1 = document.getElementById('upcoming_cards_list1');
-            cardsListContainer2 = document.getElementById('upcoming_cards_list2');
-            cards = data.upcoming;
-            placeCards(cards, cardsListContainer1, cardsListContainer2);
-
-            let event = new CustomEvent("cardsInPlace");
-            document.dispatchEvent(event);
-        })
-        .catch(error => console.error(error));
+  const regExp = /_/g;
+  for (const [key, val] of Object.entries(cards)) {
+    const cardsFromSection = val.map((id) => ({ review: metadata[id], id }));
+    const filteredKey = key.replace(regExp, "-");
+    let containerCarousel = document.getElementById(
+      `${filteredKey}_cards_list1`
+    );
+    let containerList = document.getElementById(`${filteredKey}_cards_list2`);
+    placeCards(cardsFromSection, containerCarousel, containerList);
+  }
+  const event = new CustomEvent("cardsInPlace");
+  document.dispatchEvent(event);
 });
 
-function placeCards(cards, cardsListContainer1, cardsListContainer2){
-    for(let i = 0; i < cards.length; i++){
-        if(i > 2){
-            let listItem = document.createElement('article');
-            listItem.innerHTML = `
-                <a href="review-prototype.html?review=${cards[i].review_id}" class="horizontal_card">
-                    <img src="${cards[i].image}" alt="${cards[i].title.toLowerCase()} image">
+function placeCards(cards, containerCarousel, containerList) {
+  console.log(cards);
+  for (let i = 0; i < cards.length; i++) {
+    const { id, review } = cards[i];
+    const { image, title, desc, author } = review;
+    const isHorizontal = i > 2;
+    const listItem = document.createElement(isHorizontal ? "article" : "li");
+    if (!isHorizontal) listItem.classList.add("card");
+    listItem.innerHTML = `
+                <a href="/views/review.html?review=${id}" class="${
+      isHorizontal ? "horizontal_card" : "vertical_card stacked"
+    }">
+                    <img src="${image}" alt="${title.toLowerCase()} image">
                     <div class="card_content">
-                        <h3 class="card_title">${cards[i].title}</h3>
-                        <p class="card_description">${cards[i].desc}</p>
-                        <p class="card_author">author: ${cards[i].author}</p>
+                        <h3 class="card_title">${title}</h3>
+                        <p class="card_description">${desc}</p>
+                        <p class="card_author">author: ${author}</p>
                     </div>
                 </a>
             `;
-            cardsListContainer2.appendChild(listItem);
-        }
-        else{
-            let listItem = document.createElement('li');
-            listItem.classList.add('card');
-            listItem.innerHTML = `
-                <a href="review-prototype.html?review=${cards[i].review_id}" class="vertical_card stacked">
-                    <img src="${cards[i].image}" alt="${cards[i].title.toLowerCase()} image">
-                    <div class="card_content">
-                        <h3 class="card_title">${cards[i].title}</h3>
-                        <p class="card_description">${cards[i].desc}</p>
-                        <p class="card_author">author: ${cards[i].author}</p>
-                    </div>
-                </a>
-            `;
-            cardsListContainer1.appendChild(listItem);
-        }
-    }
+    const container = isHorizontal ? containerList : containerCarousel;
+    container.appendChild(listItem);
+  }
 }
