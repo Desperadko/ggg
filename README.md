@@ -14,6 +14,9 @@ GGG is a website project with the topic of gaming reviews
 - Animated dropdowns
 - Responsive design
 
-## Installation
-1. ` git clone https://github.com/Desperadko/GGG.git `
-2. 
+## Installation (run in prefered IDE terminal)
+1. `git clone https://github.com/Desperadko/GGG.git `
+2. `cd GGG`
+3. `npm install`
+4. `npm run dev`
+5. Open the provided url from vite.
